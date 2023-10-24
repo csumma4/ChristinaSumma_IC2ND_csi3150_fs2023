@@ -10,14 +10,16 @@
 }
 
 /* Style the outer border around letters and titles */
-.container div {
+.container > div {
     padding: 20px;
+    border: 1px solid orange;
 }
 
 /* Style the first-level headings */
 h1 {
     border: 1px solid orange;
     padding: 10px;
+    text-align: center;
 }
 
 /* Center-align the letter items in a flex container */
@@ -25,6 +27,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Wrap to the next line when it overflows */
 }
 
 /* Style the individual letter containers */
@@ -34,10 +37,11 @@ h1 {
     align-items: center;
     margin: 0 10px;
     padding: 10px;
+    border: 1px solid orange;
 }
 
 /* Style the border around each image and button */
-.letter-content div {
+.letter-content > div {
     border: 1px solid orange;
     display: flex;
     flex-direction: column;
@@ -48,7 +52,7 @@ h1 {
 /* Adjust image styling */
 .letter-content img {
     margin-bottom: 10px;
-    width: 300px;
+    max-width: 100%; /* Ensure images don't overflow their containers */
 }
 
 /* Style the hide button */
@@ -64,7 +68,7 @@ h1 {
 .letter-title {
     border: 1px solid orange;
     padding: 10px;
-    height: 10px;
-    width: 80px;
     text-align: center;
+    width: 80px;
+    height: 40px; /* Adjust height for better visual appearance */
 }
