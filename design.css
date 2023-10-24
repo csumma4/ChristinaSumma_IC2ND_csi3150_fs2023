@@ -1,0 +1,70 @@
+/* Set styles for the entire page */
+.page-container {
+    border: 1px solid orange;
+    padding: 20px;
+}
+
+/* Center-align text within the container */
+.container {
+    text-align: center;
+}
+
+/* Style the outer border around letters and titles */
+.container div {
+    padding: 20px;
+}
+
+/* Style the first-level headings */
+h1 {
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+/* Center-align the letter items in a flex container */
+.letter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the individual letter containers */
+.letter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/* Style the border around each image and button */
+.letter-content div {
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Adjust image styling */
+.letter-content img {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+/* Style the hide button */
+.hide-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the border around each title */
+.letter-title {
+    border: 1px solid orange;
+    padding: 10px;
+    height: 10px;
+    width: 80px;
+    text-align: center;
+}
