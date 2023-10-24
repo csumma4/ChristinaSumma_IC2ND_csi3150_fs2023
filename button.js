@@ -17,12 +17,8 @@ hideButtons.forEach((button, index) => {
         resultImage.src = imageSources[index];
         resultImage.alt = `CSS Technology Feature ${String.fromCharCode(65 + index)}`;
 
-        // Clear the result container and add the image
-        resultContainer.innerHTML = '';
+        // Append the image to the result container
         resultContainer.appendChild(resultImage);
-
-        // Display the result container
-        resultContainer.style.display = 'block';
     });
 });
 
